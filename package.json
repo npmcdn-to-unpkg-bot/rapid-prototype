@@ -1,0 +1,19 @@
+{
+  "name": "rapid-prototype",
+  "version": "1.0.0",
+  "description": "a very small modern workflow for small-app, browser demos and prototypes using es6.",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:bundle.js -P -v --live -- -t es2020",
+    "build": "browserify index.js > bundle.js"
+  },
+  "keywords": ["workflow", "prototypes", "budo", "browserify" ],
+  "author": "jeblister <jebli@refindschool.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "13.0.1",
+    "budo": "8.3.0",
+    "es2020": "1.1.7",
+    "uglify-js": "2.7.0"
+  }
+}
