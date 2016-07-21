@@ -78,11 +78,11 @@ const layout = (children) => html`
 
 const view = () => layout(html`<div class="p2 felx-auto bg-body">
       <ul class="m0 p0 flex flex-justify-center flex-wrap">
-        ${contents.map((item)=> Card(item))}
+        ${contents.map((item)=> card(item))}
       </ul>
     </div>`)
 
-const Card = ({keywords, commentCount, headline, author, datePublished}) => html` <li class="m2 flex flex-column  flex-li">
+const card = ({keywords, commentCount, headline, author, datePublished}) => html` <li class="m2 flex flex-column  flex-li">
           <article class="flex flex-column flex-auto border red bg-white" itemscope itemtype="http://schema.org/Article">
             <div class="h4 px2 py2 flex border-bottom-2 bold">
               <a href=${keywords.href} class="btn red" itemprop="keywords">
