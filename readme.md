@@ -86,7 +86,7 @@ Eventually you will need an `index.html` to publish. You might also want CSS sty
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rapid Prototyping in JavaScript</title>
-    <link href="https://npmcdn.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
